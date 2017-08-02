@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'messages/reply'
+
+  get 'messages/receive'
+
   resource :messages do
     collection do
       post 'reply'
+      get 'receive'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
