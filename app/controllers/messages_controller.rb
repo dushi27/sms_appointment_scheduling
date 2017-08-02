@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+  # skip_before_filter :verify_authenticity_token
 
   def reply
     message_body = params["Body"] || "this is a test message"
