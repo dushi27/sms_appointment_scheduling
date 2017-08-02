@@ -1,3 +1,3 @@
 require 'wit'
 
-wit_client = Wit.new(access_token: ENV.fetch('WIT_TOKEN', ''))
+WIT_CLIENT = Wit.new(access_token: ENV.fetch('WIT_TOKEN', ''))
