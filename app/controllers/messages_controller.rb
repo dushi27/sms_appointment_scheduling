@@ -16,5 +16,10 @@ class MessagesController < ApplicationController
   end
 
   def receive
+  	msg = params['Body'] 
+  	from = params['From']
+
+  	puts "***********msg #{msg} and from #{from}"
+
   end
 end
